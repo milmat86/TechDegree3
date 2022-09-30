@@ -1,0 +1,291 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, input, select, textarea, button {
+  font-family: 'Merriweather', georgia, "times new roman", serif;
+  color: #2d3945;
+  font-size: 16px;
+}
+
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+
+}
+
+
+
+.container {
+  padding: 15px 16px 15px 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* header section*/
+
+header {
+  background: #2d3945;
+}
+header .container {
+  padding: 30px 20px;
+}
+header .container h1 {
+color: #ffffff;
+font-family: 'Merriweather', georgia, "times new roman", serif;
+text-transform: uppercase;
+font-size: 1.2rem;
+text-align: center;
+}
+.intro .container {
+  padding-top: 30px;
+}
+.intro div {
+    text-align: center;
+}
+.intro h2{
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+.intro p{
+  color: #cbced1;
+}
+.divider-bar {
+  width: 100%;
+  height: 9px;
+  display: block;
+  padding: 30px 0 0 0;
+}
+.divider-bar div:first-child {
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #2d3945;
+}
+.divider-bar div:last-child {
+  width: 100%;
+  height: 2px;
+  display: block;
+  margin-top: 3px;
+  background-color: #2d3945;
+}
+
+/*  FORM */
+
+.contact-info {
+border-bottom: 2px solid #000000;
+padding-bottom: 30px;
+}
+label {
+  display: block;
+  margin-bottom:15px;
+  color: #55687a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #eff0f1;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 3px solid #46698b;
+  border-radius: 5px;
+}
+
+input:active, textarea:active, select:active {
+
+}
+
+input::placeholder{
+color: #a8adb2;
+text-align: right;
+}
+select::placeholder{
+color: #a8adb2;
+text-align: right;
+}
+option::placeholder{
+color: #a8adb2;
+text-align: left;
+}
+
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+
+}
+textarea {
+  height: 125px;
+}
+.clean {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+legend {
+  padding-bottom: 15px;
+}
+legend h3 {
+  font-weight: bold;
+}
+
+.label-padding {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+select {
+  padding: 15px;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4ebbb5;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+}
+input[type="submit"],
+input[type=button] {
+  cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/*
+nav h1 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #4a4a4a;
+  padding-bottom: 20px;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.nav ul {
+display: flex;
+flex-direction: column;
+
+}
+.nav li {
+padding: 10px 10px 10px 10px;
+background: #fff;
+margin-top: 5px;
+color: #000;
+}
+
+.nav a {
+  transition: all .5s;
+  color: #4a4a4a;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  font-size: .89rem;
+  padding: 7px 0;
+}
+
+.nav a:hover {
+  color: white;
+}
+*/
+
+/* main section*/
+
+
+
+
+/*FOOTER */
+#fine-print span {
+  font-style: italic;
+  color: #a4a9ae;
+  font-size: .8rem;
+  text-align: center;
+}
+#fine-print {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .intro .container {
+    padding-top: 60px;
+  }
+  .intro h2{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+
+
+
+}
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+  }
+  .contact-info input, .contact-info select {
+    display: inline;
+    width: 70%;
+
+  }
+
+
+.contact-info label {
+  display: inline-block;
+  width: 29%;
+  height: auto;
+
+}
+
+
+}

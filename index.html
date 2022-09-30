@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Matt's Responsive Site</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <h1>The Code Review</h1>
+  </div>
+</header>
+<main>
+  <section class="intro">
+    <div class="container">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the lastest news on how your code is doing right in your inbox.</p>
+      <div class="divider-bar">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <form action="index.html" method="post">
+        <fieldset class="contact-info">
+          <legend><h3>Contact Information</h3></legend>
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="user-full-name" required placeholder="Required">
+
+          <label for="mail">Email Address</label>
+          <input type="email" id="mail" name="user-email" placeholder="Required" required>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="user-phone">
+
+          <label for="street-address">Street Address</label>
+          <input type="text" id="street-address" name="user-street-address">
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="user-city">
+
+          <label for="state">State</label>
+          <select id="state" name="user-state">
+            <option value="none" selected disabled hidden>Choose State</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Ohio">Ohio</option>
+            <option value="New York">New York</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="Maryland">Maryland</option>
+          </select>
+
+          <label for="zip">Zip</label>
+          <input type="text" id="zip" name="user-zip">
+        </fieldset>
+
+        <fieldset>
+          <legend><span>Newsletter</span></legend>
+            <label>Select the newsletter you would like to receive</label>
+            <input type="checkbox" id="news-type-html" value="news-type-html" name="user-news-type"><label class="clean" for="news-type-html">HTML News</label><br>
+            <input type="checkbox" id="news-type-css" name="user-news-type" value="news-type-CSS"><label class="clean" for="news-type-html">CSS News</label><br>
+            <input type="checkbox" id="news-type-javascript" name="user-news-type" value="news-type-javascript"><label class="clean" for="news-type-javascript">Javascript News</label><br>
+
+
+            <label class="label-padding">Newsletter format</label>
+            <input type="radio" id="HTML-format" value="HTML-format" name="user-format"><label class="clean" for="HTML-format">HTML</label><br>
+            <input type="radio" id="plain-format" value="plain-format" name="user-format"><label class="clean" for="plain-format">Plain Text</label><br>
+
+            <label class="label-padding" for="plain-format">Other topics you'ld like to hear about</label>
+            <textarea id="user-message" name="user-message"></textarea>
+            <button type="submit">Sign Up</button>
+          </fieldset>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer id="fine-print">
+
+  <span>&copy; 2022 The Code Review</span>
+
+</footer>
+
+
+</body>
+
+</html>
