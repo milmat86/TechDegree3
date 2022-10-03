@@ -76,15 +76,20 @@ text-align: center;
 }
 
 /*  FORM */
-
+.flex {
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
 .contact-info {
 border-bottom: 2px solid #000000;
 padding-bottom: 30px;
+display: flex;
+flex-direction: column;
 }
 label {
-  display: block;
-  margin-bottom:15px;
   color: #55687a;
+  padding-bottom: 15px;
 }
 
 input[type="text"],
@@ -97,8 +102,6 @@ select {
   border-radius: 5px;
   border: none;
   background: #eff0f1;
-  width: 100%;
-  margin-bottom: 30px;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -148,7 +151,7 @@ legend h3 {
 
 .label-padding {
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 select {
   padding: 15px;
@@ -169,6 +172,7 @@ button {
   margin-bottom: 10px;
   cursor: pointer;
   border: none;
+  margin-top: 15px;
 }
 input[type="submit"],
 input[type=button] {
@@ -178,7 +182,10 @@ input[type=button] {
 fieldset {
   margin-bottom: 30px;
   border: none;
+  display: flex;
+  flex-direction: column;
 }
+
 
 legend {
   font-size: 1.4em;
@@ -186,53 +193,10 @@ legend {
 }
 
 
-
-
-
-
-
-
-/*
-nav h1 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #4a4a4a;
-  padding-bottom: 20px;
+input[name="user-zip"] {
+  width: 40%;
 }
 
-.main-nav {
-  text-align: center;
-}
-
-.nav ul {
-display: flex;
-flex-direction: column;
-
-}
-.nav li {
-padding: 10px 10px 10px 10px;
-background: #fff;
-margin-top: 5px;
-color: #000;
-}
-
-.nav a {
-  transition: all .5s;
-  color: #4a4a4a;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 700;
-  font-size: .89rem;
-  padding: 7px 0;
-}
-
-.nav a:hover {
-  color: white;
-}
-*/
-
-/* main section*/
 
 
 
@@ -249,7 +213,7 @@ color: #000;
   margin-bottom: 20px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .intro .container {
     padding-top: 60px;
   }
@@ -260,32 +224,31 @@ color: #000;
     padding-bottom: 10px;
   }
 
-
-
-
-}
-
-
-@media (min-width: 1025px) {
-
   .container {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 50px;
   }
-  .contact-info input, .contact-info select {
-    display: inline;
-    width: 70%;
+
+
+
+  .flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
 
   }
+  .flex label {
+    flex-basis: 200px;
+  }
+  .flex input, .flex select {
+    width: 100%;
+  }
+  [id~=zip] {
+    max-width: 50%;
+  }
 
-
-.contact-info label {
-  display: inline-block;
-  width: 29%;
-  height: auto;
-
-}
 
 
 }
