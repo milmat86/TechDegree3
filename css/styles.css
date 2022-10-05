@@ -81,6 +81,9 @@ text-align: center;
   flex-direction: column;
   padding-bottom: 20px;
 }
+.input-container {
+  flex-basis: 100%;
+}
 .contact-info {
 border-bottom: 2px solid #000000;
 padding-bottom: 30px;
@@ -102,6 +105,7 @@ select {
   border-radius: 5px;
   border: none;
   background: #eff0f1;
+  width:100%;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -197,7 +201,9 @@ input[name="user-zip"] {
   width: 40%;
 }
 
-
+#zip {
+  width: 25%;
+}
 
 
 
@@ -245,9 +251,7 @@ input[name="user-zip"] {
   .flex input, .flex select {
     width: 100%;
   }
-  [id~=zip] {
-    max-width: 50%;
-  }
+
 
 
 
