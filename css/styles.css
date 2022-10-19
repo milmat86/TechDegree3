@@ -113,10 +113,6 @@ input:focus, textarea:focus, select:focus {
   border-radius: 5px;
 }
 
-input:active, textarea:active, select:active {
-
-}
-
 input::placeholder{
 color: #a8adb2;
 text-align: right;
@@ -202,7 +198,7 @@ input[name="user-zip"] {
 }
 
 #zip {
-  width: 25%;
+  width: 50%;
 }
 
 
@@ -252,6 +248,9 @@ input[name="user-zip"] {
     width: 100%;
   }
 
+  #zip {
+    width: 25%;
+  }
 
 
 
